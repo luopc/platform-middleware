@@ -1,0 +1,42 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          context-path: ${spring.application.name}
+          #context-path: ${server.servlet.context-path}
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  # 服务发现
+  cloud:
+    nacos:
+      discovery:
+        server-addr: app.luopc.com:8848,data.luopc.com:8848,core.luopc.com:8848
+        namespace: dev
+        register:
+          group-name: DEFAULT_GROUP
+      config:
+        server-addr: app.luopc.com:8848,data.luopc.com:8848,core.luopc.com:8848
+        namespace: dev
+        group: DEFAULT_GROUP
+
+---
+spring:
+  config:
+    activate:
+      on-profile: uat
+  # 服务发现
+  cloud:
+    nacos:
+      discovery:
+        server-addr: app.luopc.com:8848,data.luopc.com:8848,core.luopc.com:8848
+        namespace: uat
+        register:
+          group-name: DEFAULT_GROUP
+      config:
+        server-addr: app.luopc.com:8848,data.luopc.com:8848,core.luopc.com:8848
+        namespace: uat
+        group: DEFAULT_GROUP
