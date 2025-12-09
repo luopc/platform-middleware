@@ -17,8 +17,14 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>${alibaba.cloud.nacos.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.alibaba.nacos</groupId>
+                    <artifactId>nacos-client</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-        <!--服务发现
+        <!--服务发现 使用高版本的client version 解决shutdown 的时候的空指针异常 -->
         <dependency>
             <groupId>com.alibaba.nacos</groupId>
             <artifactId>nacos-client</artifactId>
@@ -30,6 +36,5 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        -->
     </dependencies>
 </project>
