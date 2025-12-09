@@ -1,6 +1,7 @@
 package com.luopc.platform.cloud.amq.convertor;
 
-import com.luopc.platform.common.core.util.SequenceIdUtil;
+
+import com.luopc.platform.web.common.core.util.SequenceIdUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.amqp.core.Message;

@@ -1,7 +1,7 @@
 package com.luopc.platform.cloud.amq.test;
 
 import com.luopc.platform.cloud.amq.util.RabbitConnectionUtil;
-import com.luopc.platform.common.core.util.SequenceIdUtil;
+import com.luopc.platform.web.common.core.util.SequenceIdUtil;
 import com.rabbitmq.client.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

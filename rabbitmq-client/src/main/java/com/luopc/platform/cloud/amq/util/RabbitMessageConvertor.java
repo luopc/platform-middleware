@@ -1,6 +1,6 @@
 package com.luopc.platform.cloud.amq.util;
 
-import com.luopc.platform.common.core.util.SmartJsonUtil;
+import com.luopc.platform.web.common.core.util.SimpleJsonUtil;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.http.MediaType;
@@ -14,7 +14,7 @@ import org.springframework.http.MediaType;
 public class RabbitMessageConvertor {
 
     public Message toJsonMessage(Object entity) {
-        String json = com.luopc.platform.common.core.util.SmartJsonUtil.writeJson(entity);
+        String json = SimpleJsonUtil.writeJson(entity);
         MessageProperties jsonProperties = new MessageProperties();
         jsonProperties.setContentType(MediaType.APPLICATION_JSON_VALUE);
         return new Message(json.getBytes(), jsonProperties);
