@@ -5,7 +5,7 @@
         <artifactId>platform-middleware</artifactId>
         <version>1.0.3-SNAPSHOT</version>
     </parent>
-    <artifactId>common-nacos</artifactId>
+    <artifactId>nacos-client</artifactId>
     <packaging>jar</packaging>
     <name>common-nacos</name>
     <properties>

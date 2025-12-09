@@ -5,10 +5,9 @@
         <artifactId>platform-middleware</artifactId>
         <version>1.0.3-SNAPSHOT</version>
     </parent>
-
-    <artifactId>common-activemq</artifactId>
+    <artifactId>eureka-client</artifactId>
     <packaging>jar</packaging>
-    <name>common-activemq</name>
+    <name>common-eureka</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,9 +15,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.luopc.platform.boot</groupId>
-            <artifactId>common-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 </project>

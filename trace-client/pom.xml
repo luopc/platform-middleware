@@ -6,7 +6,7 @@
         <artifactId>platform-middleware</artifactId>
         <version>1.0.3-SNAPSHOT</version>
     </parent>
-    <artifactId>common-trace</artifactId>
+    <artifactId>trace-client</artifactId>
     <packaging>jar</packaging>
     <name>Common Trace</name>
     <description>Distributed tracing integration with SkyWalking and Micrometer</description>

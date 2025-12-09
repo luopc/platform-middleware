@@ -13,12 +13,12 @@
         <version>2.10.5</version>
     </parent>
     <modules>
-        <module>common-trace</module>
-        <module>common-redis</module>
+        <module>trace-client</module>
+        <module>redis-client</module>
         <!--        <module>common-amq</module>-->
-        <module>common-activemq</module>
-        <module>common-nacos</module>
-        <module>common-eureka</module>
+        <module>activemq-client</module>
+        <module>nacos-client</module>
+        <module>eureka-client</module>
     </modules>
     <properties>
         <java.version>21</java.version>
