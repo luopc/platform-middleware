@@ -41,9 +41,9 @@ public class MarketDataTopicSubscriberTest {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("data.luopc.com");
         factory.setPort(5672);
-        factory.setUsername("env/dev");
+        factory.setUsername("dev");
         factory.setPassword("Robin2023");
-        factory.setVirtualHost("env/dev");
+        factory.setVirtualHost("dev");
         try (Connection connection = factory.newConnection(); Channel channel = connection.createChannel()) {
             //声明一个交换机
             channel.exchangeDeclare(MarketDataEventTagConst.MARKET_DATA_EXCHANGE, BuiltinExchangeType.TOPIC);
